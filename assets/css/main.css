@@ -923,7 +923,13 @@ section,
   background: linear-gradient(135deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
   padding: 120px 0;
 }
-
+ .hero .nameText{
+    font-size: 1.6rem;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-weight:400;
+}
 .hero .hero-content h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -1203,26 +1209,31 @@ section,
 .about .image-composition .image-secondary {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 45%;
+  left: -60px;
   z-index: 3;
+      width: 155px;
+    height: 155px;
 }
 
 .about .image-composition .image-secondary img {
-  border-radius: 8px;
-  border: 5px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  border: 1px dashed color-mix(in srgb, var(--default-color), transparent 70%);
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 .about .image-composition .stats-card {
   position: absolute;
-  top: 0;
+  top: -28px;
   right: 0;
   z-index: 4;
   background: var(--surface-color);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
+  border: 1px dashed color-mix(in srgb, var(--default-color), transparent 70%);
   display: flex;
   gap: 2rem;
 }
@@ -1570,10 +1581,14 @@ section,
 .portfolio .portfolio-wrapper .portfolio-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      filter: blur(1px);
 }
-
+.gslide-media.gslide-image img {
+    filter: blur(1.9px);
+    image-rendering: pixelated;
+}
 .portfolio .portfolio-wrapper .portfolio-image .portfolio-hover {
   position: absolute;
   top: 0;
