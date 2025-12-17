@@ -1027,6 +1027,18 @@ section,
     justify-content: center;
     gap: 1.5rem;
   }
+  .hero .hero-buttons .btn{
+    font-size: 0.8rem;
+  }
+  .about .image-composition .image-secondary{
+    left: -3px;
+    width: 100px;
+    height: 90px;
+  }
+  .portfolio .portfolio-cta .cta-buttons{
+    flex-wrap:nowrap;
+  }
+  .portfolio .portfolio-cta .cta-buttons a{font-size:14px;}
 }
 
 .hero .hero-visual {
