@@ -7,27 +7,26 @@
   --nav-font: "Raleway", sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+
 :root {
-  --background-color: #05071e; /* Background color for the entire website, including individual sections */
-  --default-color: #e8e7f7; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #33ebff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #131428; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #05071e; 
+  --default-color: #e8e7f7; 
+  --heading-color: #ffffff; 
+  --accent-color: #33ebff; 
+  --surface-color: #131428; 
+  --contrast-color: #ffffff; 
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+
 :root {
-  --nav-color: #c8c6e3; /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #03051f; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #1f2240; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #c8c6e3; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #c8c6e3; 
+  --nav-hover-color: #ffffff; 
+  --nav-mobile-background-color: #03051f; 
+  --nav-dropdown-background-color: #1f2240; 
+  --nav-dropdown-color: #c8c6e3; 
+  --nav-dropdown-hover-color: #ffffff; 
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #0c114a;
@@ -176,8 +175,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -4594,200 +4591,5 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Error 404 Section
---------------------------------------------------------------*/
-.error-404 {
-  padding: 120px 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(
-    135deg,
-    var(--surface-color) 0%,
-    color-mix(in srgb, var(--accent-color), transparent 97%) 100%
-  );
-}
 
-.error-404 .error-number {
-  font-size: clamp(120px, 20vw, 280px);
-  font-weight: 300;
-  color: color-mix(in srgb, var(--heading-color), transparent 15%);
-  line-height: 0.8;
-  margin-bottom: 40px;
-  font-family: var(--heading-font);
-  letter-spacing: -0.02em;
-}
 
-.error-404 .error-title {
-  font-size: clamp(32px, 5vw, 48px);
-  font-weight: 300;
-  color: var(--heading-color);
-  margin-bottom: 32px;
-  letter-spacing: -0.01em;
-}
-
-.error-404 .error-description {
-  font-size: 18px;
-  line-height: 1.7;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-bottom: 48px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.error-404 .error-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-@media (min-width: 576px) {
-  .error-404 .error-actions {
-    flex-direction: row;
-    justify-content: center;
-    gap: 24px;
-  }
-}
-
-.error-404 .error-actions .btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 16px 32px;
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  border: 2px solid var(--accent-color);
-}
-
-.error-404 .error-actions .btn-primary:hover {
-  background-color: transparent;
-  color: var(--accent-color);
-  transform: translateY(-2px);
-}
-
-.error-404 .error-actions .btn-primary i {
-  font-size: 18px;
-}
-
-.error-404 .error-actions .btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 16px 32px;
-  background-color: transparent;
-  color: var(--heading-color);
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.error-404 .error-actions .btn-secondary:hover {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-  transform: translateY(-2px);
-}
-
-.error-404 .error-actions .btn-secondary i {
-  font-size: 18px;
-}
-
-.error-404 .helpful-links {
-  text-align: center;
-}
-
-.error-404 .helpful-links h3 {
-  font-size: 24px;
-  font-weight: 300;
-  color: var(--heading-color);
-  margin-bottom: 40px;
-}
-
-.error-404 .helpful-links .links-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  .error-404 .helpful-links .links-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.error-404 .helpful-links .link-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  padding: 32px 20px;
-  background-color: var(--surface-color);
-  border-radius: 8px;
-  text-decoration: none;
-  color: var(--default-color);
-  transition: all 0.3s ease;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.error-404 .helpful-links .link-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px
-    color-mix(in srgb, var(--default-color), transparent 90%);
-  color: var(--accent-color);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
-}
-
-.error-404 .helpful-links .link-item i {
-  font-size: 24px;
-  color: var(--accent-color);
-  transition: all 0.3s ease;
-}
-
-.error-404 .helpful-links .link-item span {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.error-404 .helpful-links .link-item:hover i {
-  transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-  .error-404 {
-    padding: 80px 0;
-  }
-
-  .error-404 .error-actions {
-    margin-bottom: 60px;
-  }
-
-  .error-404 .helpful-links .links-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 576px) {
-  .error-404 .helpful-links .links-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
