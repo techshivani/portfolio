@@ -1034,6 +1034,9 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-top: 0.5rem;
 }
+.glightbox-clean .gslide-title{
+  font-family: var(--heading-font) !important;
+}
 
 @media (max-width: 768px) {
   .hero .hero-stats {
@@ -1043,6 +1046,11 @@ section,
   .hero .hero-buttons .btn{
     font-size: 0.8rem;
   }
+  .about .image-composition .stats-card {
+
+    top: -80px !important;
+    
+}
   .about .image-composition .image-secondary{
     left: -3px !important;
     width: 90px !important;
