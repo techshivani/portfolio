@@ -1044,9 +1044,9 @@ section,
     font-size: 0.8rem;
   }
   .about .image-composition .image-secondary{
-    left: -3px;
-    width: 100px;
-    height: 90px;
+    left: -3px !important;
+    width: 90px !important;
+    height: 90px !important;
   }
   .portfolio .portfolio-cta .cta-buttons{
     flex-wrap:nowrap;
